@@ -15,7 +15,7 @@ description : Go function is for control the drone with more nature language.
 
 void setup() {  
   CoDrone.begin(115200);            // sets up the connection to the drone using the bluetooth module Baudrate at 115200bps (bits per second)
-  CoDrone.pair();
+  CoDrone.pair(Nearest);
   CoDrone.DroneModeChange(Flight);  // Changes the drone so that it is now in flight mode
 
   delay(1000);
