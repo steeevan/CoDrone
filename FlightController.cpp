@@ -36,3 +36,24 @@ void loop()
     CoDrone.move(ROLL,PITCH,YAW,THROTTLE);                  // Send the new flight commands
   }
 }
+
+/*
+Additional challenges
+
+void loop(){ 
+    byte bt8 = digitalRead(18);
+    byte bt4 = digitalRead(14);
+    byte bt1 = digitalRead(11);
+
+    if(bt8){
+     CoDrone.FlightEvent(TakeOff);
+     
+     delay(2000);
+     CoDrone.FlightEvent(Landing);
+   }
+
+   else if(bt1 && bt4 && !bt8){
+      CoDrone.FlightEvent(Stop);
+    }
+}
+*/
